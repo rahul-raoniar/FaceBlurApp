@@ -24,7 +24,7 @@ def detect_and_blur_face(img):
 
 
 def main():
-    st.title("Face Remover App")
+    st.title("Face Blurring App")
 
     menu = ["Home", "About"]
     choice = st.sidebar.selectbox("Menu", menu)
