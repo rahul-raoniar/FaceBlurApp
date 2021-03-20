@@ -14,7 +14,7 @@ def load_image(image_file):
 face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 def detect_and_blur_face(img):
     face_img = img.copy()
-    face_points = face_cascade.detectMultiScale(face_img, scaleFactor=1.5, minNeighbors=6)
+    face_points = face_cascade.detectMultiScale(face_img, scaleFactor=1.11, minNeighbors=6)
     
     for (x,y,w,h) in face_points:
         roi = face_img[y:y+h, x:x+w]
